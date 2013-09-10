@@ -50,6 +50,6 @@ public class Percolation
     private boolean indexValidator(int index)
     {
         boolean indexIsValid = false;
-        if (i <= 0 || i > N) throw new IndexOutOfBoundsException("row index i out of bounds");
+        //if (i <= 0 || i > N) throw new IndexOutOfBoundsException("row index i out of bounds");
     }
 }
