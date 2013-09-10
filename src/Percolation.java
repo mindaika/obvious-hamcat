@@ -33,7 +33,6 @@ public class Percolation
             Unity.union(gridToIndex(N-1, i),BottomIndex);
     }
 
-
     // open site (row i, column j) if it is not already
     public void open(int i, int j)
     {
@@ -82,12 +81,14 @@ public class Percolation
         return Unity.connected(TopIndex,BottomIndex);
     }
 
+    // Convert grid location to index in boolean array
     private int gridToIndex(int row, int col)
     {
         int index = col + (row * GridEdge);
         return index;
     }
 
+    // Validates some give index, but I don't think I actually used it anywhere
     private boolean indexValidator(int index)
     {
         boolean indexIsValid = true;
