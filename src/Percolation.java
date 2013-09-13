@@ -3,7 +3,6 @@ public class Percolation
     // ...
     // your data members here
     private WeightedQuickUnionUF percChain, fullState;
-    //private boolean[] siteIsFull;
     private boolean[] siteIsOpen;
     private int topIndex, bottomIndex, gridEdge;
     // ...
@@ -24,7 +23,6 @@ public class Percolation
 
         // grid to store which sites are open, full
         siteIsOpen = new boolean[N*N];
-        //siteIsFull = new boolean[N*N];
 
         // Join top virtual site to top row
         for (int i = 0; i < N; i++) {
